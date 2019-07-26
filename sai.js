@@ -6,7 +6,6 @@ var items={
     clothes:["shirts","pants","tshirts","shoes","chappals"],
 }
 
-items
 
 items.push({
     address:'dsfsfdsfsd',
