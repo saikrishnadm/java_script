@@ -5,10 +5,18 @@ var fs =require('fs')
    // console.log(data.toString())
   });
 
+// try catch for handling the errors
+try
+{
  var a= fs.readFileSync('app.js');
+}
+catch(err)
+{
+  console.log(err)
+}
 
  //console.log(a.toString())
-
+console.log("after err")
 
  fs.writeFile('sai.txt',"saikrishna",(err)=>{
  })
