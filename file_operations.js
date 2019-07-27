@@ -5,7 +5,7 @@ var fs =require('fs')
    // console.log(data.toString())
   });
 
-// try catch for handling the errors
+// try catch for handling the 
 try
 {
  var a= fs.readFileSync('app.js');
