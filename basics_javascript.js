@@ -80,8 +80,6 @@ console.log("Exiting switch block");
 
 
 
-
-
 /********************************** 
  * For loop
  * For In
@@ -94,7 +92,7 @@ console.log("Exiting switch block");
 
 
 
- /******
+/******
  * 
  * WHILE
  * 
@@ -102,7 +100,8 @@ console.log("Exiting switch block");
 
 
 var array = [0, 4, 5, 4564, 6564, 7, 746, 8, 4564]
-var count = 0, sum = 0;
+var count = 0,
+    sum = 0;
 while (count < array.length) {
     sum = sum + array[count];
     console.log(sum + "     " + array[count]);
@@ -116,15 +115,19 @@ while (count < array.length) {
  * 
  *************/
 
-var person = {fname:"John", lname:"Doe", age:25}; 
-  
-  var text = "";
-  var x;
-  for (x in person) {
+var person = {
+    fname: "John",
+    lname: "Doe",
+    age: 25
+};
+
+var text = "";
+var x;
+for (x in person) {
     text += person[x] + " ";
-   
-  }
-  
+
+}
+
 /////////////////////////////////
 
 
@@ -195,3 +198,71 @@ var a = array.find((a, i) => {
     return a === 4564;
 })
 console.log(a)
+
+
+
+/////////////////////////
+/****
+ * Functions
+*****/
+/////////////////////////
+
+
+
+// Anomious functions
+
+// In ES6 function 
+
+var a=()=>{
+    console.log("saikrishna")
+}
+
+
+// In Normal Function
+
+var b = function(){
+    console.log("saikrishna")
+}
+
+// Calling the function
+
+a()
+
+b()
+
+
+// Named Functions
+
+// Parameters 
+ 
+es6=(f)=>{
+    console.log(f)
+}
+
+function name(f){
+    console.log(f)
+}
+
+// Calling Named Parameter Functions
+
+name(12344)
+
+es6(122344)
+
+
+// Values Returning Functions
+
+fname1=()=>{
+    return "saikishna"
+}
+
+function fname2(){
+    return "saikrishnareddy"
+}
+
+// Calling functions
+
+console.log(fname1())
+
+console.log(fname2())
+
