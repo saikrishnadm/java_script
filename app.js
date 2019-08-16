@@ -15,7 +15,11 @@ var connection = mysql.createConnection({
  
 connection.connect();
  
+var admin =require("./admin.js")
+var user=require("./user.js")
 
+app.use('/admin',admin)
+app.use("/user",user)
 
 app.post('/',(req,res)=>{
  //   console.log(req.query)

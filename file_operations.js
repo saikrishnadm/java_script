@@ -18,9 +18,9 @@ catch(err)
  //console.log(a.toString())
 console.log("after err")
 
- fs.writeFile('sai.txt',"saikrishna",(err)=>{
+ fs.writeFile('sai.txt',"bbbbbbbbbb",(err)=>{
  })
 
-fs.appendFile('sai.txt'," reddy",(err)=>{
+fs.appendFile('sai.txt',"aaaaaaaaaaaaaaa",(err)=>{
   console.log(err)
 })
